@@ -15,22 +15,22 @@
 <form action="{{ url_for('edit') }}" enctype="multipart/form-data" method="POST">
     <input hidden="hidden" name="id" value="{{book.id}}">
       <div class="form-floating mb-3">
-        <input name="title" class="form-control" type="text" placeholder="Change title" required>
-        <label>Original: "{{ book.title }}"</label>
+        <input name="title" class="form-control" type="text" value="{{ book.title }}" placeholder="Change title" required>
+        <label>Title</label>
       </div>
     <div class="input-group">
       <div class="form-floating mb-3">
-        <input name="semester" class="form-control" type="text" placeholder="Change semester" required>
-        <label>Original: "{{ book.semester }}"</label>
+        <input name="semester" class="form-control" type="text" value="{{ book.semester }}" placeholder="Change semester" required>
+        <label>Semester</label>
       </div>
       <div class="form-floating mb-3">
-        <input name="branch" class="form-control" type="text" placeholder="Change branch" required>
-        <label>Original: "{{ book.branch }}"</label>
+        <input name="branch" class="form-control" type="text" value="{{ book.branch }}" placeholder="Change branch" required>
+        <label>Branch</label>
       </div>
     </div>
       <div class="form-floating mb-3">
-        <input name="subject" class="form-control" type="text" placeholder="Change subject" required>
-        <label>Original: "{{ book.subject }}"</label>
+        <input name="subject" class="form-control" type="text" value="{{ book.subject }}" placeholder="Change subject" required>
+        <label>Subject</label>
       </div>
     <div class="input-group mb-3">
     <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
